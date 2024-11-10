@@ -1,0 +1,26 @@
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    color: rgba(102, 102, 102, .6);
+    font-size: 14px;
+    font-weight: 600;
+
+    .key-icon {
+        position: relative;
+        top: 1px;
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    a[href] {
+        color: #0eaad7;
+    }
+
+    .nodata_img {
+        height: 70%;
+        margin-top: 10%;
+    }
+}

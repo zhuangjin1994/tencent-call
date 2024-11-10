@@ -1,0 +1,141 @@
+// cover some element-ui styles
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  color: #fff !important;
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding: 9px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    min-width: 60px;
+  }
+}
+
+// collapse
+.el-collapse {
+  width: 100%;
+  border: none !important;
+  .el-collapse-item__arrow::before {
+    content: '\E7A0';
+    top: 16px;
+    left: 20px;
+    position: absolute;
+    color: #848c94;
+    font-size: 16px;
+    display: inline-block;
+  }
+  .is-active .el-collapse-item__arrow::before {
+    content: '\E7A2';
+  }
+  .el-collapse-item__arrow.is-active {
+    transform: none;
+  }
+  .el-collapse-item__header {
+    color: #191b27;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Microsoft Yahei UI Bold;
+    position: relative;
+    width: 98%;
+    display: inline-block;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    // border-bottom: 1px solid #E9E9E9 !important;
+  }
+  .collapse-btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  .el-collapse-item__wrap {
+    border-bottom: none;
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+// tooltip
+.el-tooltip__popper {
+    max-width: 40%!important;
+  }
+  .el-tooltip__popper,
+  .el-tooltip__popper.is-dark {
+    max-width: 40%!important;
+    line-height: 20px;
+}
+
+// table
+.el-table {
+  .el-table__cell {
+    padding: 8px 0;
+  }
+  .el-table__header .cell {
+    color: #181921;
+  }
+  td {
+    height: 40px;
+  }
+  .el-table__body tr,
+  .el-table__body td {
+    padding: 0;
+    height: 40px;
+  }
+}
